@@ -1,0 +1,16 @@
+{
+  "name": "imageviewer",
+  "version": "1.0.0",
+  "description": "Custom visualization for displaying Base64 encoded images",
+  "main": "visualization.js",
+  "scripts": {
+    "build": "$SPLUNK_HOME/bin/splunk cmd node ./node_modules/webpack/bin/webpack.js",
+    "devbuild": "$SPLUNK_HOME/bin/splunk cmd node ./node_modules/webpack/bin/webpack.js --progress",
+    "watch": "$SPLUNK_HOME/bin/splunk cmd node ./node_modules/webpack/bin/webpack.js -d --watch --progress"
+  },
+  "author": "Justin Brown",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^1.12.6"
+  }
+}

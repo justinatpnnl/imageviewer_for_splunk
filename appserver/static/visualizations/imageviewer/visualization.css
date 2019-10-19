@@ -1,0 +1,8 @@
+/*
+ * CSS rules for visualization.
+ * Class namespacing is good practice.
+ */
+
+.base64Image {
+    max-height: 100%;
+}
