@@ -1,0 +1,6 @@
+.gitattributes export-ignore
+.gitignore export-ignore
+/appserver/static/visualizations/*/src export-ignore
+/appserver/static/visualizations/*/package-lock.json export-ignore
+/appserver/static/visualizations/*/package.json export-ignore
+/appserver/static/visualizations/*/webpack.config.js export-ignore
