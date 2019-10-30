@@ -56,7 +56,10 @@ define([
                 modalHeaderButton.setAttribute("type", "button");
                 modalHeaderButton.setAttribute("aria-hidden", "true");
                 modalHeaderButton.setAttribute("data-dismiss", "modal");
-                modalHeaderButton.innerText = "x";
+                modalHeaderButton.innerText = "&times;";
+
+                let modalHeaderTitle = document.createElement("h3");
+                modalHeaderTitle.innerText = "Screenshot";
 
                 let modalBody = document.createElement("div");
                 modalBody.id = id + "_modalBody";
@@ -76,6 +79,7 @@ define([
                 modalImage.className = "modalImage";
 
                 modalHeader.append(modalHeaderButton);
+                modalHeader.append(modalHeaderTitle);
                 modalBody.append(modalImage);
                 modal.append(modalHeader);
                 modal.append(modalBody);

@@ -47,7 +47,6 @@ define(["api/SplunkVisualizationBase"], function(__WEBPACK_EXTERNAL_MODULE_1__) 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*
 	 * Visualization source
 	 */
-
 	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
 	        __webpack_require__(1)
 	    ], __WEBPACK_AMD_DEFINE_RESULT__ = function(
@@ -102,7 +101,10 @@ define(["api/SplunkVisualizationBase"], function(__WEBPACK_EXTERNAL_MODULE_1__) 
 	                modalHeaderButton.setAttribute("type", "button");
 	                modalHeaderButton.setAttribute("aria-hidden", "true");
 	                modalHeaderButton.setAttribute("data-dismiss", "modal");
-	                modalHeaderButton.innerText = "x";
+	                modalHeaderButton.innerText = "&times;";
+
+	                let modalHeaderTitle = document.createElement("h3");
+	                modalHeaderTitle.innerText = "Screenshot";
 
 	                let modalBody = document.createElement("div");
 	                modalBody.id = id + "_modalBody";
@@ -122,6 +124,7 @@ define(["api/SplunkVisualizationBase"], function(__WEBPACK_EXTERNAL_MODULE_1__) 
 	                modalImage.className = "modalImage";
 
 	                modalHeader.append(modalHeaderButton);
+	                modalHeader.append(modalHeaderTitle);
 	                modalBody.append(modalImage);
 	                modal.append(modalHeader);
 	                modal.append(modalBody);
