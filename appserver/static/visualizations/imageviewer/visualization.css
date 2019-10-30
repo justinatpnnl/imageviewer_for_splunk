@@ -9,3 +9,23 @@
     box-shadow: 0 0 5px #e1e6eb;
     margin: 10px;
 }
+
+.modal.large {
+    width: 80%;
+    margin-left: -40%;
+}
+
+.modal-body {
+    padding: 20px;
+    max-height: unset;
+}
+
+.modal-body:last-child {
+    max-height: unset;
+}
+
+.modalImage {
+    border: 1px solid #e1e6eb;
+    box-shadow: 0 0 5px #e1e6eb;
+    margin-top: 10px;
+}
