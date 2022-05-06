@@ -1,6 +1,6 @@
 {
   "name": "imageviewer",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Custom visualization for displaying Base64 encoded images",
   "main": "visualization.js",
   "scripts": {
