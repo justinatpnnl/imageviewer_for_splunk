@@ -11,6 +11,7 @@
   "author": "Justin Brown",
   "license": "MIT",
   "devDependencies": {
-    "webpack": "^1.12.6"
+    "webpack": "^4",
+    "webpack-cli": "^4.9.2"
   }
 }
