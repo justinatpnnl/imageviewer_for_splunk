@@ -2,13 +2,9 @@ var webpack = require('webpack');
 var path = require('path');
 
 module.exports = {
-    entry: 'visualization_source',
-    resolve: {
-        root: [
-            path.join(__dirname, 'src'),
-        ]
-    },
+    entry: path.join(__dirname, 'src', 'visualization_source'),
     output: {
+        path: __dirname,
         filename: 'visualization.js',
         libraryTarget: 'amd'
     },
